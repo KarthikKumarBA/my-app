@@ -1,0 +1,9 @@
+name: my-app
+on: [push]
+jobs:
+  hello:
+    name: hellow
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hellow
+        run: echo "hellow"
