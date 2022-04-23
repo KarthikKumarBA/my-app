@@ -6,16 +6,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print hello
-        run: echo "hello"
+        run: |
+          hello=hello
+          echo "$hello"
   world:
     name: world
     runs-on: ubuntu-latest
     steps:
       - name: print world
-        run: echo "world"
- world1:
-    name: world
+        run: |
+          world=world
+          echo "$world"
+  hello-world:
+    name: hello-world
     runs-on: ubuntu-latest
     steps:
       - name: print world
-        run: echo "world"
+        run: echo "$hello+$world"
