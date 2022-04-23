@@ -2,8 +2,14 @@ name: my-app
 on: [push]
 jobs:
   hello:
-    name: hellow
+    name: hello
     runs-on: ubuntu-latest
     steps:
-      - name: print hellow
-        run: echo "hellow"
+      - name: print hello
+        run: echo "hello"
+  world:
+    name: world
+    runs-on: ubuntu-latest
+    steps:
+      - name: print world
+        run: echo "world"
