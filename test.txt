@@ -1,1 +1,2 @@
-Welcome to Git Class
+test=$ENPat/test
+test2=$EnvPath/test2
